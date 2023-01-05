@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+
+  <script>
+    function showToast(
+      params = {
+        title: '', // 提示的内容
+        icon: 'none', // loading success
+        duration: 1500, // 提示的延迟时间
+        unit: 'px',
+      }
+    ) {
+      return new Promise((resolve, reject) => {
+        let { unit } = params
+        const dom = document.createElement('div')
+        dom.style.position = 'absolute'
+        dom.style.left = '50%'
+        dom.style.bottom = `300${unit}`
+        dom.style.transform = 'translate(-50%, 0%)'
+        dom.style.backgroundColor = 'rgba(0,0,0,0.6)'
+        dom.style.color = 'white'
+        dom.style.borderRadius = `10${unit}`
+        dom.style.padding = `10${unit} 16${unit}`
+        dom.innerText = '这是一条提示信息'
+        
+        console.log(dom)
+        //
+        document.body.appendChild(dom)
+        resolve(null)
+      })
+    }
+    showToast()
+  </script>
+  <style></style>
+</html>
