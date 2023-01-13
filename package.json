@@ -1,5 +1,5 @@
 {
-  "name": "show-toast",
+  "name": "@vkcyan/show-toast",
   "version": "0.0.1",
   "main": "./dist/index.js",
   "types": "./index.d.ts",
@@ -7,7 +7,7 @@
     "build": "tsc"
   },
   "author": "wu.vkcyan@gmail.com",
-  "description": "Web side functional upload file",
+  "description": "Web side Toast",
   "bugs": {
     "url": "https://github.com/vkcyan/showToast/issues"
   },
