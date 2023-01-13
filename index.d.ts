@@ -1,9 +1,9 @@
 /**
- * 上传文件
+ * 请提示
  */
 export declare function showToast(params: {
   /**
-   * 提示问题
+   * 提示文字
    */
   title: string
   /**
