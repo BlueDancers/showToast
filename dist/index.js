@@ -21,7 +21,9 @@ function showToast(params) {
         let img = _createImg(params.icon);
         dom.appendChild(img);
     }
-    dom.appendChild(_createText());
+    if (params.title != '') {
+        dom.appendChild(_createText());
+    }
     document.body.appendChild(dom);
     // 存在自动关闭机制
     if (params.duration) {
@@ -101,7 +103,9 @@ function showToast(params) {
         img.style.height = '55px';
         img.style.marginLeft = '16px';
         img.style.marginRight = '16px';
-        img.style.marginBottom = '6px';
+        if (params.title != '') {
+            img.style.marginBottom = '6px';
+        }
         if (type == 'loading') {
             img.animate([
                 {

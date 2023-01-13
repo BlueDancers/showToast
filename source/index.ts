@@ -44,10 +44,10 @@ function showToast(params: paramsType) {
     let img = _createImg(params.icon)
     dom.appendChild(img)
   }
-  if (params.title) {
+  if (params.title != '') {
     dom.appendChild(_createText())
   }
-  
+
   document.body.appendChild(dom)
 
   // 存在自动关闭机制
@@ -132,7 +132,9 @@ function showToast(params: paramsType) {
     img.style.height = '55px'
     img.style.marginLeft = '16px'
     img.style.marginRight = '16px'
-    img.style.marginBottom = '6px'
+    if (params.title != '') {
+      img.style.marginBottom = '6px'
+    }
     if (type == 'loading') {
       img.animate(
         [
