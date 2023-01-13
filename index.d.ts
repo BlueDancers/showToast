@@ -5,7 +5,7 @@ export declare function showToast(params: {
   /**
    * 提示文字
    */
-  title: string
+  title?: string
   /**
    * 提示类型
    */
