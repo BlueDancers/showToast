@@ -9,7 +9,7 @@ export declare function showToast(params: {
   /**
    * 提示类型
    */
-  icon?: 'none' | 'loading' | 'success'
+  icon?: 'none' | 'error' | 'success'
   /**
    * 是否存在蒙版
    */

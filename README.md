@@ -32,12 +32,12 @@ toast.close()
 
 ## API
 
-| 属性     | 类型                   | 默认值 | 说明                |
-| -------- | ---------------------- | ------ | ------------------- |
-| title    | string                 |        | toast提示文本       |
-| icon     | none\|success\|loading | none   | toast类型           |
-| mask     | boolean                | true   | toast是否存在遮罩层 |
-| duration | 3000                   | number | 持续时间            |
+| 属性     | 类型                 | 默认值 | 说明                |
+| -------- | -------------------- | ------ | ------------------- |
+| title    | string               |        | toast提示文本       |
+| icon     | none\|error\|loading | none   | toast类型           |
+| mask     | boolean              | true   | toast是否存在遮罩层 |
+| duration | number               | 1500   | 持续时间            |
 
 
 
