@@ -1,4 +1,4 @@
-# @vkcyan/showToast
+# @vkcyan/show-toast
 
 ## 介绍
 
@@ -35,7 +35,7 @@ toast.close()
 | 属性     | 类型                 | 默认值 | 说明                |
 | -------- | -------------------- | ------ | ------------------- |
 | title    | string               |        | toast提示文本       |
-| icon     | none\|error\|loading | none   | toast类型           |
+| icon     | none\|error\|success | none   | toast类型           |
 | mask     | boolean              | true   | toast是否存在遮罩层 |
 | duration | number               | 1500   | 持续时间            |
 
